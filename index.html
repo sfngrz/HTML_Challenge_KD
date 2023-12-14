@@ -13,19 +13,21 @@
       <a href="/Grocery/">Grocery List</a>
       <a href="/For-You/">For You</a>
       <a href="/Search/">Search</a>
-      <dialog id="modal">
-        <form method="dialog">
-          <div>
-            <button class="close">x</button>
-          </div>
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" autocomplete="email" />
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password" autocomplete="current-password" />
-            <button>Log in</button>
-        </form>
-      </dialog>
-      
+      <div id="modal">
+        <div>
+          <button class="close" onclick="location.href='#'">x</button>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" autocomplete="email" />
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            autocomplete="current-password" />
+          <button onclick="location.href='#'">Log in</button>
+        </div>
+      </div>
+
       <a href="#modal" class="MainNavText">
         <svg
           width="32"
@@ -41,7 +43,6 @@
             fill="#FFF8F8" />
         </svg>
       </a>
-      
     </nav>
   </div>
 
@@ -67,8 +68,9 @@
         stroke="#FFF8F8"
         stroke-width="2" />
     </svg>
+    
+    <h2><a href="/Users/stefano/Desktop/WD Learning/KD/Recipe.html">Soy sauce noodles</a></h2>
 
-    <h2>Soy sauce noodles</h2>
     <h3 class="description">Easy, delicious and comforting chinese noodles</h3>
     <svg
       id="like"
