@@ -51,7 +51,7 @@ html {
 @media (min-width:900px) {
     .container {
         padding: 40px;
-        /* align-content: center; */
+        align-content: center;
     }
 }
 
