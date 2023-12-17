@@ -1,3 +1,53 @@
+body {
+    background: var(--Background, #302F2F);
+    color: #FFF8F8;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+
+/*mobile*/
+.container {
+    margin: 0 auto;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .container {
+        padding: 40px;
+    }
+}
+
+
+h1 {
+    display: flex;
+    width: 369px;
+    height: 227px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--Interface-White, #FFF8F8);
+    font-family: Medio;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px;/* 64.583% */
+    text-transform: uppercase;
+
+}
+
 #modal {
     display: none;
     position: fixed;
@@ -10,30 +60,108 @@
     align-items: center;
 }
 
-    #modal div {
-        background: #ffffff61;
-        padding: 20px;
-        border-radius: 5px;
-        text-align: right;
-        position: relative;
-    }
+#modal div {
+    background: #ffffff61;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    position: relative;
+}
 
-    #modal:target {
-        display: flex;
-    }
+#modal:target {
+    display: flex;
+}
 
-    #modal div button.close {
-        background: none;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-        position: absolute;
-        top: -30px;
-        right: 10px;
-        z-index: 1;
-    }
+#modal div button.close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    z-index: 1;
+}
 
-    #modal div button {
-        padding: 10px 20px;
-        margin-top: 40px; 
-    }
+#modal div button {
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    font-family: Medio;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px;
+    /* 0% */
+    text-transform: uppercase;
+    overflow: visible;
+    width: max-content;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+nav a {
+    position: relative;
+    color: #FFF8F8;
+    text-decoration: none;
+    float: none;
+    padding: 16px 45px;
+}
+
+
+nav {
+    position: relative;
+    /* Set the parent <nav> element to a relative position */
+}
+
+nav a:nth-of-type(1) {
+    position: relative;
+    /* Set the "Favourites" link to a relative position */
+}
+
+hr {
+    position: absolute;
+    top: calc(10% + 9px);
+    /* Adjust this value based on your specific layout */
+    left: 44%;
+    /* Adjust this value to align with the "Favourites" link */
+    transform: translateX(-28%);
+    /* Adjust this value to align with the "Favourites" link */
+    width: 100%;
+    /* Ensures the <hr> spans the entire width of the container */
+    border: none;
+    border-top: 1px solid #FFF8F8;
+    /* Style the <hr> as a horizontal line */
+}
+
+.MainNavText {
+    position: absolute;
+    top: 50%;
+    /* Adjust this value to vertically center the SVG */
+    transform: translateY(-50%);
+    /* Adjust this value to vertically center the SVG */
+    right: -400px;
+    /* Adjust this value to move the SVG more to the right */
+    z-index: 2;
+    /* Set a higher z-index to ensure the SVG appears above the <hr> element */
+}
+
+.container1 {
+    position: relative;
+}
+
+
+.item-2 {
+    position: relative;
+    top: -1000px;
+    left: 680px;
+}
+
+.item-3 {
+    position: relative;
+    top: -1513px;
+    left: 980px;
+}

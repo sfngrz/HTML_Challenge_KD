@@ -1,0 +1,126 @@
+body {
+    background: var(--Background, #302F2F);
+    color: #FFF8F8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+}
+
+/*mobile*/
+.container {
+    margin: 0 auto;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .container {
+        padding: 40px;
+    }
+}
+
+/* Mobile */
+.container {
+    padding: 14px;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .container {
+        padding: 40px;
+        /* align-content: center; */
+    }
+}
+
+
+h1 {
+    font-family: Medio;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: Medio;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: Medio;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-family: Medio;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+p {
+    font-family: Biko;
+    font-size: 16px;
+}
+
+span.a {
+    display: inline;
+    font-weight: 800;
+}
+
+span.b {
+    display: inline;
+    padding-right: 10px;
+
+}
+
+span.c {
+    display: inline;
+}
+
+span.d {
+    display: inline;
+    font-weight: 800;
+    padding-right: 10px;
+}
+
+ul {
+    font-family: Biko;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+ol {
+    font-family: Biko;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
