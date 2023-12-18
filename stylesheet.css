@@ -149,12 +149,12 @@ hr {
     /* Set a higher z-index to ensure the SVG appears above the <hr> element */
 }
 
-.container1 {
+/* .container-1 {
     position: relative;
-}
+} */
 
 
-.item-2 {
+/* .item-2 {
     position: relative;
     top: -1000px;
     left: 680px;
@@ -164,4 +164,10 @@ hr {
     position: relative;
     top: -1513px;
     left: 980px;
+} */
+
+div.container-1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
 }
